@@ -1,0 +1,17 @@
+[
+    {
+        "categoryId": 1,
+        "categoryName": "Featured Device",
+        "img": "https://images.thedailystar.net/sites/default/files/images/2022/05/13/feature_phones_in_bangladesh.jpg"
+    },
+    {
+        "categoryId": 2,
+        "categoryName": "Smart Device",
+        "img": "https://www.android.com/static/2016/img/one/carousel/nokia_5_3_1x.png"
+    }
+    {
+        "categoryId": 2,
+        "categoryName": "Flagship Device",
+        "img": "https://images.anandtech.com/doci/16753/X-T30_DSF5320_678x452.jpg"
+    }
+]
