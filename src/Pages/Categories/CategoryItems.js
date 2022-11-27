@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import BookingModal from './BookingModal';
 import CategoryItem from './CategoryItem';
 
 const CategoryItems = () => {
@@ -15,14 +16,20 @@ const CategoryItems = () => {
     console.log(categoryItems)
     
     return (
-        <div className="my-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+       <section>
+         <div className="my-10 grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {
-                categoryItems.map((categoryItem) => <CategoryItem
+                categoryItems?.map((categoryItem) => <CategoryItem
 
                     categoryItem={categoryItem}
                 ></CategoryItem>)
             }
         </div>
+        {
+            <BookingModal></BookingModal>
+        }
+
+       </section>
     );
 };
 

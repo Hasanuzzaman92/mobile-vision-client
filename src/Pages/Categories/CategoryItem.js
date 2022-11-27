@@ -13,8 +13,16 @@ const CategoryItem = ({categoryItem}) => {
 			<p className="flex justify-between dark:dark:text-gray-100"> Seller Name: {sellerName} </p>
 			
 		</div>
-		<button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:dark:bg-sky-400 dark:dark:text-gray-900">Read more</button>
+		<div className="card-actions justify-center">
+            <label
+                htmlFor="booking-modal"
+                className="btn btn-primary text-white"
+            >Book Now</label>
+        </div>
 	</div>
+
+
+	
 </div>
     );
 };

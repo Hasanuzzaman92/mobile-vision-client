@@ -3,11 +3,12 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../contexts/AuthProvider';
+import {GoogleAuthProvider} from 'firebase/auth'
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [signUpError, setSignUPError] = useState('');
-    const {createUser} = useContext(AuthContext);
+    const {createUser, googleSignIn} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate()
 
@@ -20,13 +21,27 @@ const SignUp = () => {
                 const user = result.user;
                 console.log(user);
                 toast.success('User Created Successfully.')
+
                 navigate(from, {replace: true})
+
                 
             })
             .catch(error => {
                 console.log(error)
                 setSignUPError(error.message)
             });
+    }
+
+    const provider = new GoogleAuthProvider()
+    const handleGoogleSignIn = () =>{
+        googleSignIn(provider)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+            navigate(from, {replace: true});
+            toast.success('Google log in success')
+        })
+        .catch(error => console.error(error))
     }
 
 
@@ -77,7 +92,7 @@ const SignUp = () => {
                 </form>
                 <p>Already have an account? <Link className='text-secondary' to="/login">Please Login</Link></p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
+                <button onClick={handleGoogleSignIn} className='btn btn-outline w-full'>CONTINUE WITH GOOGLE</button>
 
             </div>
         </div>
