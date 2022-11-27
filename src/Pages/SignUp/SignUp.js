@@ -1,13 +1,32 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
+import { AuthContext } from '../../contexts/AuthProvider';
 
 const SignUp = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const [signUpError, setSignUPError] = useState('');
+    const {createUser} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate()
 
-    const handleSignUp = data =>{
+    const from = location.state?.from?.pathname || '/';
 
+    const handleSignUp = (data) => {
+        setSignUPError('');
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                toast.success('User Created Successfully.')
+                navigate(from, {replace: true})
+                
+            })
+            .catch(error => {
+                console.log(error)
+                setSignUPError(error.message)
+            });
     }
 
 
@@ -47,8 +66,8 @@ const SignUp = () => {
           <select
           {...register('useAsA')}
           className="select select-bordered w-full">
-            <option >User</option>
-            <option>Seller</option>
+            <option value='user' selected >User</option>
+            <option value='seller'>Seller</option>
             
           </select>
           
