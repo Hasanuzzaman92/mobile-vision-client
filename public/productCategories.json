@@ -2,16 +2,102 @@
     {
         "categoryId": 1,
         "categoryName": "Featured Device",
-        "img": "https://images.thedailystar.net/sites/default/files/images/2022/05/13/feature_phones_in_bangladesh.jpg"
+        "img": "https://images.thedailystar.net/sites/default/files/images/2022/05/13/feature_phones_in_bangladesh.jpg",
+        "categoryItems":[
+            {
+                "name": "Samsung",
+                "image": "https://orderkori.com.bd/wp-content/uploads/2021/07/Samsung_brio_ve_b313_metro.jpg",
+                "location": "Mirpur, Dhaka",
+                "resalePrice": 15,
+                "originalPrice": 20,
+                "usageDuration": "6 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Rashidul Hasan"
+            },
+            {
+                "name": "Nokia",
+                "image": "https://gadgetkhor.com/image/cache/catalog/March%202021/Nokia%20106%20Basic%20Phone-550x550.jpg",
+                "location": " Kushtia",
+                "resalePrice": 10,
+                "originalPrice": 15,
+                "usageDuration": "8 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Obaidul Islam"
+            },
+            {
+                "name": "Symphony",
+                "image": "https://www.mumoutletbd.com/wp-content/uploads/2021/03/0188507_l95-symphony-feature-phone.jpeg",
+                "location": " Chuadanga",
+                "resalePrice": 10,
+                "originalPrice": 15,
+                "usageDuration": "3 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Shohel Rana"
+            }
+        ]
     },
     {
         "categoryId": 2,
         "categoryName": "Smart Device",
-        "img": "https://www.android.com/static/2016/img/one/carousel/nokia_5_3_1x.png"
-    }
+        "img": "https://www.android.com/static/2016/img/one/carousel/nokia_5_3_1x.png",
+        "categoryItems":[
+            {
+                "name": "Samsung",
+                "image": "https://www.mobiledokan.com/wp-content/uploads/2022/10/Samsung-Galaxy-A04s.jpg",
+                "location": "Gulshan, Dhaka",
+                "resalePrice": 150,
+                "originalPrice": 200,
+                "usageDuration": "6 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Al-Amin"
+            },
+            {
+                "name": "Xiaomi",
+                "image": "https://www.gizmochina.com/wp-content/uploads/2020/02/xiaomi_mi_10-1.jpg",
+                "location": " Jashore",
+                "resalePrice": 175,
+                "originalPrice": 200,
+                "usageDuration": "3 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Tuhin Alam"
+            },
+            {
+                "name": "Oppo",
+                "image": "https://image.oppo.com/content/dam/oppo/in/mkt/phonelist/products/find-x2-blue.png",
+                "location": " Chuadanga",
+                "resalePrice": 150,
+                "originalPrice": 200,
+                "usageDuration": "1 Year",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Shohel Rana"
+            }
+        ]
+    },
     {
         "categoryId": 2,
         "categoryName": "Flagship Device",
-        "img": "https://images.anandtech.com/doci/16753/X-T30_DSF5320_678x452.jpg"
+        "img": "https://images.anandtech.com/doci/16753/X-T30_DSF5320_678x452.jpg",
+        "categoryItems":[
+            {
+                "name": "Samsung Galaxy Z Fold4",
+                "image": "https://fdn.gsmarena.com/imgroot/news/22/08/samsung-galaxy-z-fold4-announcement/-1220x526/gsmarena_000.jpg",
+                "location": "Gulshan, Dhaka",
+                "resalePrice": 1000,
+                "originalPrice": 1200,
+                "usageDuration": "6 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Monjur khan"
+            },
+            {
+                "name": "iphone 14 pro max",
+                "image": "https://www.mobiledokan.com/wp-content/uploads/2022/09/Apple-iPhone-14-Pro-Max.jpg",
+                "location": " Jashore",
+                "resalePrice": 1050,
+                "originalPrice": 1200,
+                "usageDuration": "7 Months",
+                "postingTime": "26th nov, 2022",
+                "sellerName": "Apu Biswas"
+            }
+        ]
     }
 ]
