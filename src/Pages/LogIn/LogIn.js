@@ -32,6 +32,7 @@ const LogIn = () => {
 
 
     const provider = new GoogleAuthProvider()
+    
     const handleGoogleSignIn = () =>{
         googleSignIn(provider)
         .then(result => {
