@@ -58,7 +58,7 @@ const BookingModal = ({categoryItem}) => {
                         <input name="userName" type="text" defaultValue={user?.displayName} disabled placeholder="Your Name" className="input w-full input-bordered" />
                         <input name="email" type="email" defaultValue={user?.email} disabled placeholder="Email Address" className="input w-full input-bordered" />
                         <input name="itemName" type="text" defaultValue={name} disabled placeholder="Item Name" className="input w-full input-bordered" />
-                        <input name="price" type="text" defaultValue={resalePrice} disabled placeholder="Price" className="input w-full input-bordered" />
+                        <input name="price" type="text" defaultValue= {resalePrice} disabled placeholder="Price" className="input w-full input-bordered" />
                         <input name="phone" type="text"  placeholder="Your phone" className="input w-full input-bordered" />
                         <input name="location" type="text"  placeholder="Meeting Location" className="input w-full input-bordered" />
                         <br />
