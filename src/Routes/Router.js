@@ -7,6 +7,7 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Home from "../Pages/HomePage/Home/Home";
 import LogIn from "../Pages/LogIn/LogIn";
 import SignUp from "../Pages/SignUp/SignUp";
+import PrivateRoutes from "./PrivateRoutes/PrivateRoutes";
 
 
 const router = createBrowserRouter([
@@ -43,9 +44,12 @@ const router = createBrowserRouter([
            {
             path: '/categories/:categoryName',
             loader: ({params}) => fetch(`https://mobile-vision-server.vercel.app/categories/${params.categoryName}`) ,
-            element: <CategoryItems></CategoryItems>
+            element: <PrivateRoutes><CategoryItems></CategoryItems></PrivateRoutes>
            }
         ]
+    },
+    {
+        
     }
 ])
 
