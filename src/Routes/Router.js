@@ -37,12 +37,12 @@ const router = createBrowserRouter([
            },
            {
             path: '/categories',
-            loader: () => fetch('http://localhost:5000/categories') ,
+            loader: () => fetch('https://mobile-vision-server.vercel.app/categories') ,
             element: <Categories></Categories>
            },
            {
             path: '/categories/:categoryName',
-            loader: ({params}) => fetch(`http://localhost:5000/categories/${params.categoryName}`) ,
+            loader: ({params}) => fetch(`https://mobile-vision-server.vercel.app/categories/${params.categoryName}`) ,
             element: <CategoryItems></CategoryItems>
            }
         ]
